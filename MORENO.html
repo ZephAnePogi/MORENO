@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Personal Portfolio website</title>
+	<link rel="stylesheet" href="MORENO.CSS">
+	<!----Font awesome cdn font icon css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+	   <div class="wrapper">
+	       <header>
+		       <div class="logo">
+		           <i class="fa-solid fa-j"></i>
+		           <div class="logo-text">John Rodge Moreno</div>
+		       </div>
+			   <nav>
+			       <div class="togglebtn">
+				       <span></span>
+					   <span></span>
+					   <span></span>
+				   </div>
+				   <ul class="navlinks">
+				       <li><a href="file:///C:/Users/NEC/Documents/Notepad++/New%20folder/MORENO.HTML#">HOME</a></li>
+					   <li><a href="mailto:morenojohnrodge@gmail.com">CONTACT</a></li>
+				   </ul>
+			   </nav>
+		   </header>
+		   <div class="container">
+		      <div class="hero-pic">
+					<img src="https://shorturl.at/dST37" alt="profile pic">
+			  </div>
+			      <div class="hero-text">
+				       <h5>Hi I'm a <span class="input"></span></h5>
+					   <h1>John Rodge Moreno</h1>
+					   <p>Hello there! Welcome to my personal interactive website, This website is accessible on both desktop and. You can know me better by browsing this website, If you have further questions feel free to contact me.
+					   </p>
+					   <div class="btn-group">
+					       <a href="https://ibb.co/vxpyC53" download class="btn active">Download CV</a>
+					   </div>
+					   <div class="social">
+					       <a href="https://www.facebook.com/Gowther.kunn5?mibextid=2JQ9oc"><i class="fa-brands fa-facebook"></i></a>
+						   <a href="https://youtube.com/@johnrodgemoreno3448?si=Vh9oI1oAQVKhyauPhttps://youtube.com/@johnrodgemoreno3448?si=Vh9oI1oAQVKhyauP"><i class="fa-brands fa-youtube"></i></a>
+						   <a href="https://www.instagram.com/rodge_moreno?igshid=OGQ5ZDc2ODk2ZA="><i class="fa-brands fa-instagram"></i></a>
+						   <a href="https://www.tiktok.com/@mr.kurozuka?_t=8iEhgL79Agc&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+					   </div>
+			      </div>
+		   </div>
+	    </div>
+	</div>
+	<!---typed js for typing text effect-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+	    var togglebtn=document.querySelector(".togglebtn");
+		var nav=document.querySelector(".navlinks");
+		var links=document.querySelector(".navlinks li");
+		
+		togglebtn.addEventListener("click", function(){
+		    this.classList.toggle("click");
+			nav.classList.toggle("open");
+		})
+		
+		var typed=new Typed(".input",{
+		   strings:["BSCS-1B Student","Web Developer","Web Designer","Game Developer"],
+		   typedSpeed:60,
+		   backspeed:65,
+		   loop:true
+		})
+	</script>	
+</body>
+</html>
